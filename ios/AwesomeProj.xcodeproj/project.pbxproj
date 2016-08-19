@@ -34,8 +34,8 @@
 		A734A58B1D62636D00DCAAB9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A734A58A1D62636D00DCAAB9 /* UIKit.framework */; };
 		A734A58D1D62637700DCAAB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A734A58C1D62637700DCAAB9 /* Foundation.framework */; };
 		A734A5911D626BB800DCAAB9 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A734A5901D626BB800DCAAB9 /* opencv2.framework */; };
-		A734A5FC1D650D5700DCAAB9 /* CVCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = A734A5FB1D650D5700DCAAB9 /* CVCamera.mm */; };
 		A734A5FF1D650F0C00DCAAB9 /* CVCameraManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = A734A5FE1D650F0C00DCAAB9 /* CVCameraManager.mm */; };
+		A734A6081D67C79000DCAAB9 /* CVCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = A734A6071D67C79000DCAAB9 /* CVCamera.mm */; };
 		EB583C70743846F6AAE69ACF /* libRCTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E48F8977EE8448B58E812D99 /* libRCTCamera.a */; };
 /* End PBXBuildFile section */
 
@@ -160,10 +160,10 @@
 		A734A58A1D62636D00DCAAB9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A734A58C1D62637700DCAAB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A734A5901D626BB800DCAAB9 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		A734A5FA1D650D5700DCAAB9 /* CVCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVCamera.h; path = ../../../Desktop/TestingOpenCV/TestingOpenCV/CVCamera.h; sourceTree = "<group>"; };
-		A734A5FB1D650D5700DCAAB9 /* CVCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CVCamera.mm; path = ../../../Desktop/TestingOpenCV/TestingOpenCV/CVCamera.mm; sourceTree = "<group>"; };
 		A734A5FD1D650E8800DCAAB9 /* CVCameraManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CVCameraManager.h; path = AwesomeProj/CVCameraManager.h; sourceTree = "<group>"; };
 		A734A5FE1D650F0C00DCAAB9 /* CVCameraManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CVCameraManager.mm; path = AwesomeProj/CVCameraManager.mm; sourceTree = "<group>"; };
+		A734A6061D67C79000DCAAB9 /* CVCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVCamera.h; path = AwesomeProj/CVCamera.h; sourceTree = "<group>"; };
+		A734A6071D67C79000DCAAB9 /* CVCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CVCamera.mm; path = AwesomeProj/CVCamera.mm; sourceTree = "<group>"; };
 		E48F8977EE8448B58E812D99 /* libRCTCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTCamera.a; sourceTree = "<group>"; };
 		E5F4174882C849D394A225BB /* RCTCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RCTCamera.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,11 +286,11 @@
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				A734A6061D67C79000DCAAB9 /* CVCamera.h */,
+				A734A6071D67C79000DCAAB9 /* CVCamera.mm */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				A734A5551D5E901700DCAAB9 /* RCTViewManager.h */,
-				A734A5FA1D650D5700DCAAB9 /* CVCamera.h */,
-				A734A5FB1D650D5700DCAAB9 /* CVCamera.mm */,
 				A734A5FD1D650E8800DCAAB9 /* CVCameraManager.h */,
 				A734A5FE1D650F0C00DCAAB9 /* CVCameraManager.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -635,9 +635,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				A734A6081D67C79000DCAAB9 /* CVCamera.mm in Sources */,
 				A734A5FF1D650F0C00DCAAB9 /* CVCameraManager.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				A734A5FC1D650D5700DCAAB9 /* CVCamera.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
